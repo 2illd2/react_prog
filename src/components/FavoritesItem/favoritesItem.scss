@@ -1,0 +1,30 @@
+@import '../../baseStyles/base.scss';
+
+.favorites__item{
+    padding: 20px;
+    border-radius: 40px;
+    background: #ebebeb;
+
+    &-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .favorites__item-info{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            img{
+                max-width: 220px;
+                border-radius: 40px;
+            }
+        }
+        svg path{
+            fill: #000;
+        }
+        svg{
+            cursor: pointer;
+        }
+    }
+
+}
+

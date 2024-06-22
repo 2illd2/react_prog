@@ -1,0 +1,67 @@
+@import '../../baseStyles/base.scss';
+
+.form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 9px 18px 0 rgba(52, 66, 57, 0.25);
+    border-radius: 20px;
+    border: 1px solid rgba(242, 242, 242, .7);
+    
+    &__group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label{
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+
+    &__input{
+        padding: 12px;
+        background: #d4ffb9;
+        border-radius: 12px;
+        font-weight: 500;
+        color: #000;
+        &::placeholder{
+            font-family: 'Inter';
+        }
+    }
+
+
+    &__textarea{
+        padding: 12px;
+        background: #d4ffb9;
+        border-radius: 12px;
+        font-weight: 500;
+        color: #000;
+        height: 250px;
+        min-height: 100px;
+        max-width: 100%;
+        min-width: 100%;
+        &::placeholder{
+            font-family: 'Inter';
+        }
+    }
+
+
+    &__btn{
+        background: #f3f3f3;
+        color: #2f5319;
+        margin: 0 auto;
+    }
+
+
+    &__error{
+        color: orange;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 12px;
+    }
+}
